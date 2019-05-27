@@ -1,7 +1,6 @@
-import React, {Component} from "react";
+import React from "react";
 import {
   Grid,
-  LinearProgress,
   Select,
   OutlinedInput,
   MenuItem,
@@ -10,13 +9,9 @@ import {
 import {
   ResponsiveContainer,
   ComposedChart,
-  AreaChart,
   LineChart,
   Line,
   Area,
-  PieChart,
-  Pie,
-  Cell,
   YAxis,
   XAxis
 } from "recharts";
@@ -28,7 +23,6 @@ import PageTitle from "../../components/PageTitle";
 import { Typography } from "../../components/Wrappers";
 import Dot from "../../components/Sidebar/components/Dot";
 
-import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
 
 const getRandomData = (length, min, max, multiplier = 10, maxDiff = 10) => {
@@ -86,7 +80,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
             className={classes.card}
           >
             <div className={classes.visitsNumberContainer}>
-              <Typography size="xl" weight="medium">
+              <Typography size="xxl" weight="medium">
                 < Json />
               </Typography>
               <LineChart
@@ -105,7 +99,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
                   type="natural"
                   dataKey="value"
                   stroke={theme.palette.success.main}
-                  strokeWidth={2}
+                  strokeWidth={5}
                   dot={false}
                 />
               </LineChart>
@@ -118,7 +112,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
             >
               <Grid item>
                 <Typography color="textSecondary">Medições</Typography>
-                <Typography size="md">30</Typography>
+                <Typography size="md">100</Typography>
               </Grid>
               <Grid item>
                 <Typography color="textSecondary">Variação</Typography>
@@ -126,7 +120,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
               </Grid>
               <Grid item>
                 <Typography color="textSecondary">Delay</Typography>
-                <Typography size="md">5 seg</Typography>
+                <Typography size="md">15 seg</Typography>
               </Grid>
             </Grid>
           </Widget>
@@ -136,7 +130,7 @@ const Dashboard = ({ classes, theme, ...props }) => {
             header={
               <div className={classes.mainChartHeader}>
                 <Typography variant="headline" color="textSecondary">
-                  Linha de Variação de pH
+                  Variação de pH (Em desenvolvimento)
                 </Typography>
                 <div className={classes.mainChartHeaderLabels}>
                   <div className={classes.mainChartHeaderLabel}>

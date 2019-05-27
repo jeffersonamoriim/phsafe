@@ -27,63 +27,83 @@ export default {
   ],
   bigStat: [
     {
-      product: "Peixe 1",
+      product: "Geophargus",
       total: {
-        monthly: 4232,
-        weekly: 1465,
-        daily: 199,
-        percent: { value: 3.7, profit: false }
+        monthly: 6.40,
+        weekly: 6.40,
+        daily: 6.40,
+        percent: { value: 0, profit: true }
       },
       color: "primary",
       registrations: {
-        monthly: { value: 830, profit: false },
-        weekly: { value: 215, profit: true },
-        daily: { value: 33, profit: true }
+        monthly: { value: 5, profit: true },
+        weekly: { value: 5, profit: true },
+        daily: { value: 5, profit: true }
       },
       bounce: {
-        monthly: { value: 4.5, profit: false },
-        weekly: { value: 3, profit: true },
-        daily: { value: 3.25, profit: true }
+        monthly: { value: 10, profit: false },
+        weekly: { value: 10, profit: true },
+        daily: { value: 10, profit: true }
       }
     },
     {
-      product: "Peixe 2",
+      product: "Acara Bandeira",
       total: {
-        monthly: 754,
-        weekly: 180,
-        daily: 27,
-        percent: { value: 2.5, profit: true }
+        monthly: 6.6,
+        weekly: 6.6,
+        daily: 6.6,
+        percent: { value: 4, profit: true }
       },
       color: "warning",
       registrations: {
-        monthly: { value: 32, profit: true },
-        weekly: { value: 8, profit: true },
-        daily: { value: 2, profit: false }
+        monthly: { value: 6, profit: true },
+        weekly: { value: 6, profit: true },
+        daily: { value: 6, profit: false }
       },
       bounce: {
-        monthly: { value: 2.5, profit: true },
-        weekly: { value: 4, profit: false },
+        monthly: { value: 4.5, profit: true },
+        weekly: { value: 4.5, profit: false },
         daily: { value: 4.5, profit: false }
       }
     },
     {
-      product: "Peixe 3",
+      product: "Tetra Moenkhausia",
       total: {
-        monthly: 1025,
-        weekly: 301,
-        daily: 44,
-        percent: { value: 3.1, profit: true }
+        monthly: 6.8,
+        weekly: 6.8,
+        daily: 6.8,
+        percent: { value: 5, profit: true }
+      },
+      color: "warning",
+      registrations: {
+        monthly: { value: 3, profit: true },
+        weekly: { value: 3, profit: true },
+        daily: { value: 3, profit: false }
+      },
+      bounce: {
+        monthly: { value: 5, profit: true },
+        weekly: { value: 5, profit: false },
+        daily: { value: 5, profit: false }
+      }
+    },
+    {
+      product: "Tetra Peugeot",
+      total: {
+        monthly: 6.5,
+        weekly: 6.5,
+        daily: 6.5,
+        percent: { value: 5, profit: true }
       },
       color: "secondary",
       registrations: {
-        monthly: { value: 230, profit: true },
-        weekly: { value: 58, profit: false },
-        daily: { value: 15, profit: false }
+        monthly: { value: 2, profit: true },
+        weekly: { value: 2, profit: false },
+        daily: { value: 2, profit: false }
       },
       bounce: {
-        monthly: { value: 21.5, profit: false },
-        weekly: { value: 19.35, profit: false },
-        daily: { value: 10.1, profit: true }
+        monthly: { value: 7, profit: false },
+        weekly: { value: 7, profit: false },
+        daily: { value: 7, profit: true }
       }
     }
   ],

@@ -31,8 +31,8 @@ class Json extends Component {
         {error ? <p>{error.message}</p> : null}
         {!isLoading ? (
           data.feeds.map(feeds => {
-            const { created_at, entry_id , field1 } = feeds;
-            if (entry_id == data.channel.last_entry_id) {
+            const { entry_id , field1 } = feeds;
+            if (entry_id === data.channel.last_entry_id) {
               return (
                 <div key={entry_id}>
                   {field1}

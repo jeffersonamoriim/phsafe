@@ -36,22 +36,6 @@ class BigStat extends PureComponent {
         header={
           <div className={classes.title}>
             <Typography variant="h5">{product}</Typography>
-
-            <Select
-              value={this.state.value}
-              onChange={this.changeValue}
-              input={
-                <Input
-                  disableUnderline
-                  classes={{ input: classes.selectInput }}
-                />
-              }
-              className={classes.select}
-            >
-              <MenuItem value="daily">Diario</MenuItem>
-              <MenuItem value="weekly">Semanal</MenuItem>
-              <MenuItem value="monthly">Mensal</MenuItem>
-            </Select>
           </div>
         }
         upperTitle
@@ -62,8 +46,7 @@ class BigStat extends PureComponent {
               {total[value]}
             </Typography>
             <Typography color={total.percent.profit ? "success" : "secondary"}>
-              &nbsp;{total.percent.profit ? "+" : "-"}
-              {total.percent.value}%
+            &nbsp;ph nativo
             </Typography>
           </div>
           <BarChart width={150} height={70} data={getRandomData()}>
@@ -79,11 +62,6 @@ class BigStat extends PureComponent {
           <div className={classnames(classes.statCell, classes.borderRight)}>
             <Grid container alignItems="center">
               <Typography variant="h6">{registrations[value].value}</Typography>
-              <ArrowForwardIcon
-                className={classnames(classes.profitArrow, {
-                  [!registrations[value].profit]: classes.profitArrowDanger
-                })}
-              />
             </Grid>
             <Typography size="sm" color="textSecondary">
               Medições
@@ -92,11 +70,6 @@ class BigStat extends PureComponent {
           <div className={classes.statCell}>
             <Grid container alignItems="center">
               <Typography variant="h6">{bounce[value].value}%</Typography>
-              <ArrowForwardIcon
-                className={classnames(classes.profitArrow, {
-                  [!registrations[value].profit]: classes.profitArrowDanger
-                })}
-              />
             </Grid>
             <Typography size="sm" color="textSecondary">
               Variação Maxima Permitida
@@ -107,14 +80,10 @@ class BigStat extends PureComponent {
               <Typography variant="h6">
                 {registrations[value].value * 10}
               </Typography>
-              <ArrowForwardIcon
-                className={classnames(classes.profitArrow, {
-                  [classes.profitArrowDanger]: !registrations[value].profit
-                })}
-              />
+
             </Grid>
             <Typography size="sm" color="textSecondary">
-              Delay
+              População
             </Typography>
           </div>
         </div>

@@ -6,32 +6,20 @@ import {
   withStyles } from "@material-ui/core";
 import {
   Home as HomeIcon,
-  NotificationsNone as NotificationsIcon,
-  FormatSize as TypographyIcon,
   FilterNone as UIElementsIcon,
-  BorderAll as TableIcon,
-  QuestionAnswer as SupportIcon,
-  LibraryBooks as LibraryIcon,
-  HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
 import classNames from 'classnames';
 
 import SidebarLink from './components/SidebarLink/SidebarLinkContainer';
-import Dot from './components/Dot';
 
 const structure = [
   { id: 0, label: 'Dashboard', link: '/app/dashboard', icon: <HomeIcon /> },
   {
     id: 4,
     label: 'Peixes',
-    link: '/app/ui',
+    link: '/app/dashboard',
     icon: <UIElementsIcon />,
-    children: [
-      { label: 'Categoria 1', link: '/app/ui/icons' },
-      { label: 'Categoria 2', link: '/app/ui/charts' },
-      { label: 'Categoria 3', link: '/app/ui/maps' },
-    ],
   },
 ];
 
