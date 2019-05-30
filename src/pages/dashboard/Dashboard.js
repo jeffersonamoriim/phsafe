@@ -16,6 +16,8 @@ import {
   XAxis
 } from "recharts";
 
+import Ph from "../../Json/phThing";
+import Graph from "../../Json/graph";
 import Json from "../../Json/json";
 import mock from "./mock";
 import Widget from "../../components/Widget";
@@ -123,7 +125,13 @@ const Dashboard = ({ classes, theme, ...props }) => {
                 <Typography size="md">15 seg</Typography>
               </Grid>
             </Grid>
-          </Widget>
+          </Widget>  
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+        < Ph />
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+        < Graph />
         </Grid>
         <Grid item xs={12}>
           <Widget
